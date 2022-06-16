@@ -8,29 +8,70 @@
 }
 .dialoguebox{
     display: flex;
-    width:45%;
+    flex-direction: column;
+    width:30%;
     border: 1px solid red;
-    align-items: top;
+    /* justify-content: center; */
+    align-items: center;
     /* justify-content: center; */
     height: 65%;
     background-color:white;
     padding: 0px;
+    margin-left: 8px;
 
 }
-.dialoguebox-label{
-    justify-content: center;
+.input-icons i {
+    position: absolute;
 }
+ 
+.input-icons {
+    width: 70%;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 44px;
+}
+
+ 
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+ 
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width: 720px) {
+    .dialoguebox {width:100%;}
+    .col-12 {width: 100%;}
+  }
+
 img{
     width: 65px;
     height: 24px;
-    margin-top: 24px;
+    margin-top: 7px;
     justify-content: left;
     margin-left: 19px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 
 h1{
     justify-content: center;
     align-items: center;
+}
+.label{
+    display: flex;
+    margin-top: 1rem;
+}
+.forget{
+    color: blue;
+    margin-top: -2rem;
+    /* float: right; */
+    margin-left: 9rem;
+}
+.btn {
+    margin-top:28px;
 }
