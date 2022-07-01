@@ -3,7 +3,7 @@ import './login.css'
 import pic from './../assets/mlelogo.png'
 import { useState } from 'react'
 
-function Login() {
+function ResetPassword() {
   const initialValues = { username: "", email: "", password: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors,setFormErrors]= useState({});
@@ -80,13 +80,13 @@ function Login() {
 
 
             <i className=" align-middle fa fa-user icon fa-lg mt-7"></i>
-            <input className="input-field" placeholder='Enter your User Id' type="text" name="username"value={formValues.username} onChange={handleChange}></input>
+            <input className="input-field" placeholder='Enter new password' type="text" name="username"value={formValues.username} onChange={handleChange}></input>
             <p>{formErrors.username}</p>
 
             <br />
 
             <i className="fa fa-lock icon fa-lg"></i>
-            <input className='input-field' type="password"placeholder='Enter your password'name="password"value={formValues.password} onChange={handleChange}></input>
+            <input className='input-field' type="password"placeholder='Confirm new password'name="password"value={formValues.password} onChange={handleChange}></input>
             <p>{formErrors.password}</p>
 
           </div>
@@ -106,4 +106,4 @@ function Login() {
   )
 }
 
-export default Login
+export default ResetPassword
